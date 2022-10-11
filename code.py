@@ -19,6 +19,15 @@ void create() {
 	int core = destroy(widget, data);
 }
 
+void delete() {
+	gtk_quit();
+	
+	GtkWidget *widget;
+	gpointer data;
+	int core = create(widget, data);
+	destroy(widget, data);
+}
+
 int main(int argc, char* argv[]) {
 
 	GtkWidget* window;
